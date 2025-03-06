@@ -2,6 +2,8 @@
 	import phoneCover from '$assets/phone_cover.png';
 	import bookCover from '$assets/book_cover.png';
 	import { Button } from '$components/index.js';
+
+	let { children } = $props();
 </script>
 
 <section class="hero">
@@ -13,19 +15,20 @@
 		<img class="phone-cover" src={phoneCover} alt="" />
 	</div>
 	<div class="hero-text white text-center">
-		<h1>THIS EBOOK WILL</h1>
-		<h1>SAVE YOU MONEY,</h1>
-		<h1 class="mb-m">TIME & NERVES</h1>
-		<p class="light-grey mb-l"> Seven years ago, I packed up my life and moved to Spain — and let me tell you, it wasn’t
-			all sunshine and sangria. The process was far more painful than I expected, and I made every mistake in the book
-			(plus a few I didn’t even know existed). But through all the stress, confusion, and cultural shocks, I gained
-			invaluable insights that could make your move much smoother.
-
-			First, the paperwork. Bureaucracy in Spain moves at its own pace — slow and unpredictable. From visas to residency
-			permits, bank accounts to healthcare registration, every step felt like navigating a maze without a map. My
-			advice? Start early, stay organized, and expect delays. Having extra copies of every document — and I mean every
-			document — can save you hours (and sanity).</p>
-		<Button>Purchase Now</Button>
+		{#if children}
+			{@render children()}
+		{:else}
+			<h1>THIS EBOOK WILL</h1>
+			<h1>SAVE YOU MONEY,</h1>
+			<h1 class="mb-m">TIME & NERVES</h1>
+			<p class="light-grey mb-l"> Seven years ago, I packed up my life and moved to Spain — and let me tell you, it
+				wasn’t
+				all sunshine and sangria. The process was far more painful than I expected, and I made every mistake in the book
+				(plus a few I didn’t even know existed). But through all the stress, confusion, and cultural shocks, I gained
+				invaluable insights that could make your move much smoother.
+			</p>
+			<Button>Purchase Now</Button>
+		{/if}
 	</div>
 </section>
 
