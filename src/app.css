@@ -158,3 +158,19 @@ p {
     margin-right: 20vw;
     max-width: 1150px;
 }
+
+/** RESPONSIVE DESIGN **/
+
+@media (max-width: 768px) {
+    .hero-showcase h1 {
+        font-size: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+}

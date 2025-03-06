@@ -33,6 +33,7 @@
 </section>
 
 <style>
+
     .hero {
         display: flex;
         height: 100vh;
