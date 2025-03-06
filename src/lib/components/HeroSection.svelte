@@ -16,7 +16,7 @@
 		<h1>THIS EBOOK WILL</h1>
 		<h1>SAVE YOU MONEY,</h1>
 		<h1 class="mb-m">TIME & NERVES</h1>
-		<p class="light-grey mb-m"> Seven years ago, I packed up my life and moved to Spain — and let me tell you, it wasn’t
+		<p class="light-grey mb-l"> Seven years ago, I packed up my life and moved to Spain — and let me tell you, it wasn’t
 			all sunshine and sangria. The process was far more painful than I expected, and I made every mistake in the book
 			(plus a few I didn’t even know existed). But through all the stress, confusion, and cultural shocks, I gained
 			invaluable insights that could make your move much smoother.
@@ -61,6 +61,7 @@
         right: 2%;
         bottom: 0;
         width: 65%;
+        transform: translateY(20%);
     }
 
     .phone-cover {
@@ -68,6 +69,7 @@
         right: 52%;
         bottom: 100px;
         width: 35%;
+        transform: translateY(30%);
     }
 
 
