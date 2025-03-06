@@ -19,7 +19,7 @@
 			<p>
 				Whether you’re planning a short-term adventure or a permanent relocation, the author’s experiences provide
 				valuable lessons and a reassuring reminder that with patience, preparation, and an open mind, starting fresh in
-				Spain can be one of life’s most rewarding journeys.
+				Spain can be one of life’s most rewarding journeys...
 			</p>
 		</div>
 		<img src={authorPic} alt="Adrian Setka">
