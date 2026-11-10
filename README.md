@@ -1,38 +1,31 @@
-# sv
+# Sale Platform – Example Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Example sales website built with **SvelteKit**. It gets its content from my
+[Sanity Content Studio](#) and is deployed as a static site.
 
-## Creating a project
+🔗 **Live:** [https://…](https://…)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
+
+- Responsive landing page with header, [product/offer sections] and an FAQ section
+- Content (texts, FAQ, [images]) managed in Sanity, no code change needed to update it
+- Contact form with email delivery via **SendGrid**
+- Static build, deployed on [Vercel]
+
+## Tech stack
+
+SvelteKit · Vite · JavaScript · Sanity (headless CMS) · SendGrid · ESLint · Prettier
+
+## Project structure
+
+| Path | Purpose |
+|---|---|
+| `src/routes/` | Pages and the server endpoint for the contact form |
+| `src/lib/` | Components (header, FAQ, …) and the Sanity client |
+| `static/` | Images, favicon and other static assets |
+
+## Getting started
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
