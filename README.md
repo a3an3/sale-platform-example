@@ -7,8 +7,8 @@ Example sales website built with **SvelteKit**. It gets its content from my
 
 ## Features
 
-- Responsive landing page with header, [product/offer sections] and an FAQ section
-- Content (texts, FAQ, [images]) managed in Sanity, no code change needed to update it
+- Responsive landing page with header, product/offer sections and an FAQ section
+- Content (texts, FAQ, images) managed in Sanity, no code change needed to update it
 - Contact form with email delivery via **SendGrid**
 - Static build, deployed on [Vercel]
 
