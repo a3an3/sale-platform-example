@@ -3,7 +3,6 @@
 Example sales website built with **SvelteKit**. It gets its content from my
 [Sanity Content Studio](#) and is deployed as a static site.
 
-🔗 **Live:** [https://…](https://…)
 
 ## Features
 
